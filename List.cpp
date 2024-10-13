@@ -183,3 +183,14 @@ void List::purge() {
 void List::display() const {
     std::cout << *this << '\n';
 }
+
+void List::display_reversed() const {
+    if (tail != nullptr) {
+        Node* current = tail;
+        while (current->prev != nullptr) {
+            std::cout << current << ", ";
+            current = current->prev;
+        }
+        std::cout << current << '\n';
+    }
+}

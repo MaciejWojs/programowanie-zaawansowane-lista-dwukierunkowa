@@ -35,6 +35,7 @@ class List {
     void remove_at(int index);
     void purge();
     void display() const;
+    void display_reversed() const;
 
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
