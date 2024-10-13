@@ -73,6 +73,29 @@ void List::insert_at(int value, int index) {
     }
 }
 
+void List::remove_first() {
+    if (head == nullptr) {
+        std::cout << "Cant remove first element from empty list!\n";
+        exit(0);
+    }
+
+    if (counter > 1) {
+        Node* temp = head->next;
+        delete head;
+        head = temp;
+        head->prev = nullptr;
+        if (counter == 2) {
+            head = tail;
+        }
+    } else if (counter == 1) {
+        delete head;
+        head = nullptr;
+        tail = nullptr;
+    }
+
+    --counter;
+}
+
 void List::remove_last() {
     if (tail == nullptr) {
         std::cout << "Cant remove last element from empty list!\n";
