@@ -23,3 +23,19 @@ void List::push_back(int i) {
 
     ++counter;
 }
+
+void List::push_front(int i) {
+    if (head == nullptr) {
+        head = new Node(i);
+        tail = head;
+    } else {
+        // tail->next = new Node(i, tail);
+        // tail = tail->next;
+        Node* temp = head;
+        head->prev = new Node(i);
+        head = head->prev;
+        head->next = temp;
+    }
+
+    ++counter;
+}
