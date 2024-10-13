@@ -10,7 +10,7 @@ std::ostream& operator<<(std::ostream& stream, const List::Node* node) {
 List::List() : head(nullptr), tail(nullptr), counter(0) {}
 
 List::~List() {
-    purge()
+    purge();
 }
 
 void List::push_back(int i) {
@@ -120,18 +120,6 @@ void List::remove_last() {
         tail = nullptr;
     }
     --counter;
-}
-
-void List::purge() {
-    Node* current = head;
-    while (current != nullptr) {
-        Node* temp = current;
-        current = current->next;
-        delete temp;
-    }
-    head = nullptr;
-    tail = nullptr;
-    counter = 0;
 }
 
 void List::remove_at(int index) {
