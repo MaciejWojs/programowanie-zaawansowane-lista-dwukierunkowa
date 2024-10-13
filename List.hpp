@@ -25,6 +25,7 @@ class List {
     List();
 
     ~List();
+    void push_back(int i);
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
 
