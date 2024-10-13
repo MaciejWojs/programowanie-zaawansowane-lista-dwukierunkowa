@@ -28,6 +28,7 @@ class List {
     void push_back(int i);
     void push_front(int i);
     void insert_at(int value, int index);
+    void remove_last();
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
 

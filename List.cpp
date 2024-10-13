@@ -72,3 +72,28 @@ void List::insert_at(int value, int index) {
         ++counter;
     }
 }
+
+void List::remove_last() {
+    if (tail == nullptr) {
+        std::cout << "Cant remove last element from empty list!\n";
+        exit(0);
+    }
+
+    if (counter > 2) {
+        Node* temp = tail->prev;
+        delete tail;
+        tail = temp;
+        tail->next = nullptr;
+    } else if (counter == 2) {
+        Node* temp = tail->prev;
+        delete tail;
+        tail = temp;
+        tail->next = nullptr;
+        head = tail;
+    } else if (counter == 1) {
+        delete tail;
+        head = nullptr;
+        tail = nullptr;
+    }
+    --counter;
+}
