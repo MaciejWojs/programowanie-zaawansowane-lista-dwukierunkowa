@@ -23,3 +23,37 @@ void List::push_back(int i) {
 
     ++counter;
 }
+
+void List::insert_at(int value, int index) {
+    std::cout << "counter: " << counter << '\n';
+    if (index < 0) {
+        std::cout << "Index cant be negative";
+        exit(0);
+    } else if (index == 0) {
+        push_front(value);
+    } else if (index == counter) {
+        push_back(value);
+    } else {
+        if (index > counter) {
+            std::cout << "Can't insert value at this index: " << index << '\n';
+            return;
+        }
+
+        Node* current = head;
+        for (int i = 0; i <= index - 1; i++) {
+            current = current->next;
+        }
+
+        // std::cout << "current: " << current->value << " at index: " << index << '\n';
+        Node* temp = current;
+        Node* temp_prev = current->prev;
+
+        current = new Node(value);
+        temp_prev->next = current;
+        current->prev = temp_prev;
+        current->next = temp;
+
+
+        ++counter;
+    }
+}
