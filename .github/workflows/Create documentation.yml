@@ -1,0 +1,21 @@
+on:
+    push:
+      branches:
+        - main
+
+jobs:
+    Create_documentation:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+          - name: install packages
+            run: sudo apt install -y graphviz
+          - name: Doxygen Action
+            uses: mattnotmitt/doxygen-action@1.9.8
+          - name: Deploy
+            uses: peaceiris/actions-gh-pages@v4
+            with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./docs/html
+        
