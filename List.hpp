@@ -22,8 +22,10 @@ class List {
     int counter;
 
     public:
+    /// @brief Domyślny konstruktor klasy List.
     List();
 
+    /// @brief Destruktor klasy List.
     ~List();
     void push_back(int i);
     void push_front(int i);
