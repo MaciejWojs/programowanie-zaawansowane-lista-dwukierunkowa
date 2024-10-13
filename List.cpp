@@ -180,6 +180,21 @@ void List::purge() {
     counter = 0;
 }
 
+void List::display() const {
+    std::cout << *this << '\n';
+}
+
+void List::display_reversed() const {
+    if (tail != nullptr) {
+        Node* current = tail;
+        while (current->prev != nullptr) {
+            std::cout << current << ", ";
+            current = current->prev;
+        }
+        std::cout << current << '\n';
+    }
+}
+
 void List::display_next(int index) const {
     if (index < 0) {
         std::cout << "Index cant be negative\n";

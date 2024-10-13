@@ -34,6 +34,8 @@ class List {
     void remove_last();
     void remove_at(int index);
     void purge();
+    void display() const;
+    void display_reversed() const;
     void display_next(int index) const;
     void display_previous(int index) const;
 
