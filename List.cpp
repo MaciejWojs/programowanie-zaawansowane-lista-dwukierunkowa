@@ -11,3 +11,15 @@ List::List() : head(nullptr), tail(nullptr), counter(0) {}
 
 List::~List() {
 }
+
+void List::push_back(int i) {
+    if (head == nullptr) {
+        head = new Node(i);
+        tail = head;
+    } else {
+        tail->next = new Node(i, tail);
+        tail = tail->next;
+    }
+
+    ++counter;
+}
