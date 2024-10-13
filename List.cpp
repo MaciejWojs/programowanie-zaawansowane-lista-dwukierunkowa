@@ -197,3 +197,22 @@ void List::display_next(int index) const {
         std::cout << "There isn't a next element\n";
     }
 }
+
+void List::display_previous(int index) const {
+    if (index < 0) {
+        std::cout << "Index cant be negative\n";
+        return;
+    }
+
+    if (index > counter - 1) {
+        std::cout << "Index out of bound\n";
+        return;
+    }
+
+    if (index < 1) {
+        std::cout << "There isn't a next element\n";
+    } else {
+        std::cout << (*this)[index - 1] << '\n';
+    }
+
+}
