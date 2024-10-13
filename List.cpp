@@ -120,3 +120,37 @@ void List::remove_last() {
     }
     --counter;
 }
+
+void List::remove_at(int index) {
+    if (index < 0) {
+        std::cout << "Index cant be negative\n";
+        return;
+    }
+
+    if (index > counter - 1) {
+        std::cout << "Index out of bound\n";
+        return;
+    }
+
+    if (index == 0) {
+        remove_first();
+    } else if (index == counter - 1) {
+        remove_last();
+    } else {
+
+        Node* current = head;
+        for (int i = 0; i <= index - 1; i++) {
+            current = current->next;
+        }
+
+        std::cout << current->value << '\n';
+        Node* temp_prev = current->prev;
+        Node* temp_next = current->next;
+
+        delete current;
+        temp_prev->next = temp_next;
+        temp_next->prev = temp_prev;
+
+    }
+    --counter;
+}
