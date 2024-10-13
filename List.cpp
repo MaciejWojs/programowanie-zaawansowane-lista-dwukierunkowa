@@ -179,3 +179,21 @@ void List::purge() {
     tail = nullptr;
     counter = 0;
 }
+
+void List::display_next(int index) const {
+    if (index < 0) {
+        std::cout << "Index cant be negative\n";
+        return;
+    }
+
+    if (index > counter - 1) {
+        std::cout << "Index out of bound\n";
+        return;
+    }
+
+    if (counter - 2 >= index) {
+        std::cout << (*this)[index + 1] << '\n';
+    } else if (counter - 1 == index) {
+        std::cout << "There isn't a next element\n";
+    }
+}
