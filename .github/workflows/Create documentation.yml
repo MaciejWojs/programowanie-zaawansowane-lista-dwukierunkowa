@@ -10,7 +10,7 @@ jobs:
             contents: write
         steps:
           - name: install packages
-            run: sudo apt install -y graphviz
+            run: sudo apt install -y graphviz && ls && cd / && ls
           - name: Doxygen Action
             uses: mattnotmitt/doxygen-action@1.9.8
           - name: Deploy
