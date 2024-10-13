@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['remove_5fat_0',['remove_at',['../classList.html#a56cab1ddab97be01968aed50f0412be7',1,'List']]],
-  ['remove_5ffirst_1',['remove_first',['../classList.html#ad83b758e6dfa0a39e627b2efedb7f284',1,'List']]],
-  ['remove_5flast_2',['remove_last',['../classList.html#a5d0cccb611078256a7bfd2b6a6e26532',1,'List']]]
+  ['purge_0',['purge',['../classList.html#a912c199604dc1385e192530e81309c35',1,'List']]],
+  ['push_5fback_1',['push_back',['../classList.html#a3b4bc7220b3c43c76baa34f2aa1386e2',1,'List']]],
+  ['push_5ffront_2',['push_front',['../classList.html#afd44dfbf7059504174ef59567acbd1c8',1,'List']]]
 ];

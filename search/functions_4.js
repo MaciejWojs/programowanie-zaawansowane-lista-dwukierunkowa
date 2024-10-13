@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['purge_0',['purge',['../classList.html#a912c199604dc1385e192530e81309c35',1,'List']]],
-  ['push_5fback_1',['push_back',['../classList.html#a3b4bc7220b3c43c76baa34f2aa1386e2',1,'List']]],
-  ['push_5ffront_2',['push_front',['../classList.html#afd44dfbf7059504174ef59567acbd1c8',1,'List']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../List_8cpp.html#a47aa3457652d0536017505f280c9d010',1,'List.cpp']]]
 ];
