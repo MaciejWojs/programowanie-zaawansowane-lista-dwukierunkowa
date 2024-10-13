@@ -13,9 +13,11 @@ jobs:
           - name: Set up Git repository
             uses: actions/checkout@v4
           - name: install packages
-            run: sudo apt install -y graphviz && ls && cd / && ls
+            run: sudo apt update && sudo apt upgrade -y && sudo apt install -y graphviz && ls && cd / && ls
           - name: Doxygen Action
             uses: mattnotmitt/doxygen-action@1.9.8
+          - name: List dir
+            run: ls -laRh docs 
           - name: Deploy
             uses: peaceiris/actions-gh-pages@v4
             with:
