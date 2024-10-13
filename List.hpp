@@ -25,6 +25,7 @@ class List {
     List();
 
     ~List();
+    friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
 
 #endif /* C188899E_0C33_4B0A_92C3_89E0D3865046 */
