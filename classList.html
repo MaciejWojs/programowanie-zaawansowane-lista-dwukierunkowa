@@ -111,9 +111,13 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a8a61b6c358d9b6f8847b29d3154890d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed4c424a458914becc66886e1dc76af" id="r_a5ed4c424a458914becc66886e1dc76af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#a5ed4c424a458914becc66886e1dc76af">display_previous</a> (int index) const</td></tr>
 <tr class="separator:a5ed4c424a458914becc66886e1dc76af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb14d1b5bfad6e2e47b12272a99f9179" id="r_afb14d1b5bfad6e2e47b12272a99f9179"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#afb14d1b5bfad6e2e47b12272a99f9179">operator[]</a> (int index) const</td></tr>
+<tr class="separator:afb14d1b5bfad6e2e47b12272a99f9179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Przyjaciele</h2></td></tr>
+<tr class="memitem:a3a03ab727b0c8cca288ba5541ac19bc6" id="r_a3a03ab727b0c8cca288ba5541ac19bc6"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#a3a03ab727b0c8cca288ba5541ac19bc6">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="classList.html">List</a> &amp;list)</td></tr>
+<tr class="separator:a3a03ab727b0c8cca288ba5541ac19bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47aa3457652d0536017505f280c9d010" id="r_a47aa3457652d0536017505f280c9d010"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#a47aa3457652d0536017505f280c9d010">operator&lt;&lt;</a> (std::ostream &amp;stream, const List::Node *node)</td></tr>
 <tr class="separator:a47aa3457652d0536017505f280c9d010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -255,6 +259,24 @@ Przyjaciele</h2></td></tr>
 
 </div>
 </div>
+<a id="afb14d1b5bfad6e2e47b12272a99f9179" name="afb14d1b5bfad6e2e47b12272a99f9179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb14d1b5bfad6e2e47b12272a99f9179">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; List::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a912c199604dc1385e192530e81309c35" name="a912c199604dc1385e192530e81309c35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a912c199604dc1385e192530e81309c35">&#9670;&#160;</a></span>purge()</h2>
 
@@ -361,8 +383,44 @@ Przyjaciele</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja przyjaciół i funkcji związanych</h2>
+<a id="a3a03ab727b0c8cca288ba5541ac19bc6" name="a3a03ab727b0c8cca288ba5541ac19bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a03ab727b0c8cca288ba5541ac19bc6">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classList.html">List</a> &amp;&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a47aa3457652d0536017505f280c9d010" name="a47aa3457652d0536017505f280c9d010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47aa3457652d0536017505f280c9d010">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a47aa3457652d0536017505f280c9d010">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
