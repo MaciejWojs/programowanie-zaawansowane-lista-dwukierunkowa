@@ -232,6 +232,25 @@ void List::display_previous(int index) const {
 
 }
 
+const int& List::operator[](int index) const {
+    if (index < 0) {
+        std::cout << "Index cant be negative\n";
+        exit(0);
+    }
+
+    if (index > counter - 1) {
+        std::cout << "Index out of bound\n";
+        exit(0);
+    }
+
+    Node* current = head;
+    for (int i = 0; i <= index - 1; i++) {
+        current = current->next;
+    }
+
+    return current->value;
+}
+
 std::ostream& operator<<(std::ostream& stream, const List& list) {
     // stream << "Head: " << list.head->value << "\n";
     // stream << "Liczba elementów: " << list.counter;
