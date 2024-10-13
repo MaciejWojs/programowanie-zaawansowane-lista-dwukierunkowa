@@ -32,6 +32,7 @@ class List {
     void insert_at(int value, int index);
     void remove_first();
     void remove_last();
+    void purge();
 
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
