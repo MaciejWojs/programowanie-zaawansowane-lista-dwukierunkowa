@@ -39,6 +39,7 @@ class List {
     void display_next(int index) const;
     void display_previous(int index) const;
 
+    const int& operator[](int index) const;
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };
 
