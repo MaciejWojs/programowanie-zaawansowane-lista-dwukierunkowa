@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elist_0',['~List',['../classList.html#a70aecf37bd9d779a394e4d50377fbf5f',1,'List']]]
+  ['list_0',['List',['../classList.html#a64d878a92d11f7c63c70cbe4e7dd4176',1,'List']]]
 ];
