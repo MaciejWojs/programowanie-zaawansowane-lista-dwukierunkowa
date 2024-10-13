@@ -231,3 +231,20 @@ void List::display_previous(int index) const {
     }
 
 }
+
+std::ostream& operator<<(std::ostream& stream, const List& list) {
+    // stream << "Head: " << list.head->value << "\n";
+    // stream << "Liczba elementów: " << list.counter;
+    if (list.head != nullptr) {
+        List::Node* current = list.head;
+        while (current->next != nullptr) {
+            stream << current << ", ";
+            current = current->next;
+        }
+        stream << current << '\n';
+    } else {
+        stream << "Lista jest pusta\n";
+    }
+
+    return stream;
+}
