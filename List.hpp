@@ -34,6 +34,7 @@ class List {
     void remove_last();
     void remove_at(int index);
     void purge();
+    void display() const;
 
     friend std::ostream& operator<<(std::ostream& stream, const List::Node* node);
 };

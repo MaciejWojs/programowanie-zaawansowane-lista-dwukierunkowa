@@ -179,3 +179,7 @@ void List::purge() {
     tail = nullptr;
     counter = 0;
 }
+
+void List::display() const {
+    std::cout << *this << '\n';
+}
