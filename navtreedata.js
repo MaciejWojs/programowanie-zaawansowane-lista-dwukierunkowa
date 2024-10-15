@@ -22,18 +22,33 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
-var menudata={children:[
-{text:"Strona główna",url:"index.html"},
-{text:"Powiązane strony",url:"pages.html"},
-{text:"Klasy",url:"annotated.html",children:[
-{text:"Lista klas",url:"annotated.html"},
-{text:"Indeks klas",url:"classes.html"},
-{text:"Składowe klas",url:"functions.html",children:[
-{text:"Wszystko",url:"functions.html"},
-{text:"Funkcje",url:"functions_func.html"},
-{text:"Powiązane symbole",url:"functions_rela.html"}]}]},
-{text:"Pliki",url:"files.html",children:[
-{text:"Lista plików",url:"files.html"},
-{text:"Składowe plików",url:"globals.html",children:[
-{text:"Wszystko",url:"globals.html"},
-{text:"Funkcje",url:"globals_func.html"}]}]}]}
+var NAVTREE =
+[
+  [ "Lista dwukierunkowa C++", "index.html", [
+    [ "README", "md_README.html", null ],
+    [ "Klasy", "annotated.html", [
+      [ "Lista klas", "annotated.html", "annotated_dup" ],
+      [ "Indeks klas", "classes.html", null ],
+      [ "Składowe klas", "functions.html", [
+        [ "Wszystko", "functions.html", null ],
+        [ "Funkcje", "functions_func.html", null ],
+        [ "Powiązane symbole", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Pliki", "files.html", [
+      [ "Lista plików", "files.html", "files_dup" ],
+      [ "Składowe plików", "globals.html", [
+        [ "Wszystko", "globals.html", null ],
+        [ "Funkcje", "globals_func.html", null ]
+      ] ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"List_8cpp.html"
+];
+
+var SYNCONMSG = 'kliknij żeby wyłączyć pokazywanie otwartego elementu w drzewie zawartości';
+var SYNCOFFMSG = 'kliknij żeby włączyć pokazywanie otwartego elementu w drzewie zawartości';

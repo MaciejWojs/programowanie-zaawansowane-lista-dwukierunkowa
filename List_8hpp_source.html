@@ -3,16 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Lista dwukierunkowa C++: Plik źródłowy List.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -30,10 +38,15 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<!-- Wygenerowano za pomocą Doxygen 1.12.0 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -41,18 +54,29 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
+$(function(){initNavTree('List_8hpp_source.html',''); initResizable(true); });
 /* @license-end */
 </script>
-</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -94,7 +118,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Node(<span class="keywordtype">int</span> a, Node* b);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_function" href="List_8cpp.html#a47aa3457652d0536017505f280c9d010">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> List::Node* node);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; stream, <span class="keyword">const</span> List::Node* node);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span>:</div>
@@ -138,27 +162,30 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif </span><span class="comment">/* C188899E_0C33_4B0A_92C3_89E0D3865046 */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aList_8cpp_html_a47aa3457652d0536017505f280c9d010"><div class="ttname"><a href="List_8cpp.html#a47aa3457652d0536017505f280c9d010">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const List::Node *node)</div><div class="ttdef"><b>Definition</b> List.cpp:5</div></div>
-<div class="ttc" id="aclassList_html"><div class="ttname"><a href="classList.html">List</a></div><div class="ttdoc">Klasa reprezentująca listę dwukierunkową.</div><div class="ttdef"><b>Definition</b> List.hpp:7</div></div>
-<div class="ttc" id="aclassList_html_a10955b6d138ba5669638c43b496718bd"><div class="ttname"><a href="classList.html#a10955b6d138ba5669638c43b496718bd">List::display_reversed</a></div><div class="ttdeci">void display_reversed() const</div><div class="ttdoc">Wyświetla zawartość listy w odwrotnej kolejności.</div><div class="ttdef"><b>Definition</b> List.cpp:175</div></div>
-<div class="ttc" id="aclassList_html_a3a03ab727b0c8cca288ba5541ac19bc6"><div class="ttname"><a href="classList.html#a3a03ab727b0c8cca288ba5541ac19bc6">List::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const List &amp;list)</div><div class="ttdoc">Przeciążenie operatora &lt;&lt; dla klasy List.</div><div class="ttdef"><b>Definition</b> List.cpp:242</div></div>
-<div class="ttc" id="aclassList_html_a3b4bc7220b3c43c76baa34f2aa1386e2"><div class="ttname"><a href="classList.html#a3b4bc7220b3c43c76baa34f2aa1386e2">List::push_back</a></div><div class="ttdeci">void push_back(int i)</div><div class="ttdoc">Dodaje nowy element na końcu listy.</div><div class="ttdef"><b>Definition</b> List.cpp:16</div></div>
-<div class="ttc" id="aclassList_html_a3ce9b76e549d5d4e83dfca78d3af376c"><div class="ttname"><a href="classList.html#a3ce9b76e549d5d4e83dfca78d3af376c">List::display</a></div><div class="ttdeci">void display() const</div><div class="ttdoc">Wyświetla zawartość listy.</div><div class="ttdef"><b>Definition</b> List.cpp:171</div></div>
-<div class="ttc" id="aclassList_html_a56cab1ddab97be01968aed50f0412be7"><div class="ttname"><a href="classList.html#a56cab1ddab97be01968aed50f0412be7">List::remove_at</a></div><div class="ttdeci">void remove_at(int index)</div><div class="ttdoc">Usuwa element na określonym indeksie.</div><div class="ttdef"><b>Definition</b> List.cpp:125</div></div>
-<div class="ttc" id="aclassList_html_a5d0cccb611078256a7bfd2b6a6e26532"><div class="ttname"><a href="classList.html#a5d0cccb611078256a7bfd2b6a6e26532">List::remove_last</a></div><div class="ttdeci">void remove_last()</div><div class="ttdoc">Usuwa ostatni element z listy.</div><div class="ttdef"><b>Definition</b> List.cpp:100</div></div>
-<div class="ttc" id="aclassList_html_a5ed4c424a458914becc66886e1dc76af"><div class="ttname"><a href="classList.html#a5ed4c424a458914becc66886e1dc76af">List::display_previous</a></div><div class="ttdeci">void display_previous(int index) const</div><div class="ttdoc">Wyświetla poprzedni element, zaczynając od danego indeksu.</div><div class="ttdef"><b>Definition</b> List.cpp:204</div></div>
-<div class="ttc" id="aclassList_html_a64d878a92d11f7c63c70cbe4e7dd4176"><div class="ttname"><a href="classList.html#a64d878a92d11f7c63c70cbe4e7dd4176">List::List</a></div><div class="ttdeci">List()</div><div class="ttdoc">Domyślny konstruktor klasy List.</div><div class="ttdef"><b>Definition</b> List.cpp:10</div></div>
-<div class="ttc" id="aclassList_html_a70aecf37bd9d779a394e4d50377fbf5f"><div class="ttname"><a href="classList.html#a70aecf37bd9d779a394e4d50377fbf5f">List::~List</a></div><div class="ttdeci">~List()</div><div class="ttdoc">Destruktor klasy List.</div><div class="ttdef"><b>Definition</b> List.cpp:12</div></div>
-<div class="ttc" id="aclassList_html_a8a61b6c358d9b6f8847b29d3154890d1"><div class="ttname"><a href="classList.html#a8a61b6c358d9b6f8847b29d3154890d1">List::display_next</a></div><div class="ttdeci">void display_next(int index) const</div><div class="ttdoc">Wyświetla następny element, zaczynając od danego indeksu.</div><div class="ttdef"><b>Definition</b> List.cpp:186</div></div>
-<div class="ttc" id="aclassList_html_a912c199604dc1385e192530e81309c35"><div class="ttname"><a href="classList.html#a912c199604dc1385e192530e81309c35">List::purge</a></div><div class="ttdeci">void purge()</div><div class="ttdoc">Usuwa wszystkie elementy z listy.</div><div class="ttdef"><b>Definition</b> List.cpp:159</div></div>
-<div class="ttc" id="aclassList_html_ad83b758e6dfa0a39e627b2efedb7f284"><div class="ttname"><a href="classList.html#ad83b758e6dfa0a39e627b2efedb7f284">List::remove_first</a></div><div class="ttdeci">void remove_first()</div><div class="ttdoc">Usuwa pierwszy element z listy.</div><div class="ttdef"><b>Definition</b> List.cpp:77</div></div>
-<div class="ttc" id="aclassList_html_ae2fa243376e9f6cfe68538b18ca07fb5"><div class="ttname"><a href="classList.html#ae2fa243376e9f6cfe68538b18ca07fb5">List::insert_at</a></div><div class="ttdeci">void insert_at(int value, int index)</div><div class="ttdoc">Wstawia nowy element na określonym indeksie.</div><div class="ttdef"><b>Definition</b> List.cpp:43</div></div>
-<div class="ttc" id="aclassList_html_afb14d1b5bfad6e2e47b12272a99f9179"><div class="ttname"><a href="classList.html#afb14d1b5bfad6e2e47b12272a99f9179">List::operator[]</a></div><div class="ttdeci">const int &amp; operator[](int index) const</div><div class="ttdoc">Przeciążenie operatora [] do dostępu do elementów listy.</div><div class="ttdef"><b>Definition</b> List.cpp:223</div></div>
-<div class="ttc" id="aclassList_html_afd44dfbf7059504174ef59567acbd1c8"><div class="ttname"><a href="classList.html#afd44dfbf7059504174ef59567acbd1c8">List::push_front</a></div><div class="ttdeci">void push_front(int i)</div><div class="ttdoc">Dodaje nowy element na początku listy.</div><div class="ttdef"><b>Definition</b> List.cpp:27</div></div>
+<div class="ttc" id="aclassList_html"><div class="ttname"><a href="classList.html">List</a></div><div class="ttdoc">Klasa reprezentująca listę dwukierunkową.</div><div class="ttdef"><b>Definicja</b> List.hpp:7</div></div>
+<div class="ttc" id="aclassList_html_a10955b6d138ba5669638c43b496718bd"><div class="ttname"><a href="classList.html#a10955b6d138ba5669638c43b496718bd">List::display_reversed</a></div><div class="ttdeci">void display_reversed() const</div><div class="ttdoc">Wyświetla zawartość listy w odwrotnej kolejności.</div><div class="ttdef"><b>Definicja</b> List.cpp:175</div></div>
+<div class="ttc" id="aclassList_html_a3a03ab727b0c8cca288ba5541ac19bc6"><div class="ttname"><a href="classList.html#a3a03ab727b0c8cca288ba5541ac19bc6">List::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const List &amp;list)</div><div class="ttdoc">Przeciążenie operatora &lt;&lt; dla klasy List.</div><div class="ttdef"><b>Definicja</b> List.cpp:242</div></div>
+<div class="ttc" id="aclassList_html_a3b4bc7220b3c43c76baa34f2aa1386e2"><div class="ttname"><a href="classList.html#a3b4bc7220b3c43c76baa34f2aa1386e2">List::push_back</a></div><div class="ttdeci">void push_back(int i)</div><div class="ttdoc">Dodaje nowy element na końcu listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:16</div></div>
+<div class="ttc" id="aclassList_html_a3ce9b76e549d5d4e83dfca78d3af376c"><div class="ttname"><a href="classList.html#a3ce9b76e549d5d4e83dfca78d3af376c">List::display</a></div><div class="ttdeci">void display() const</div><div class="ttdoc">Wyświetla zawartość listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:171</div></div>
+<div class="ttc" id="aclassList_html_a56cab1ddab97be01968aed50f0412be7"><div class="ttname"><a href="classList.html#a56cab1ddab97be01968aed50f0412be7">List::remove_at</a></div><div class="ttdeci">void remove_at(int index)</div><div class="ttdoc">Usuwa element na określonym indeksie.</div><div class="ttdef"><b>Definicja</b> List.cpp:125</div></div>
+<div class="ttc" id="aclassList_html_a5d0cccb611078256a7bfd2b6a6e26532"><div class="ttname"><a href="classList.html#a5d0cccb611078256a7bfd2b6a6e26532">List::remove_last</a></div><div class="ttdeci">void remove_last()</div><div class="ttdoc">Usuwa ostatni element z listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:100</div></div>
+<div class="ttc" id="aclassList_html_a5ed4c424a458914becc66886e1dc76af"><div class="ttname"><a href="classList.html#a5ed4c424a458914becc66886e1dc76af">List::display_previous</a></div><div class="ttdeci">void display_previous(int index) const</div><div class="ttdoc">Wyświetla poprzedni element, zaczynając od danego indeksu.</div><div class="ttdef"><b>Definicja</b> List.cpp:204</div></div>
+<div class="ttc" id="aclassList_html_a64d878a92d11f7c63c70cbe4e7dd4176"><div class="ttname"><a href="classList.html#a64d878a92d11f7c63c70cbe4e7dd4176">List::List</a></div><div class="ttdeci">List()</div><div class="ttdoc">Domyślny konstruktor klasy List.</div><div class="ttdef"><b>Definicja</b> List.cpp:10</div></div>
+<div class="ttc" id="aclassList_html_a70aecf37bd9d779a394e4d50377fbf5f"><div class="ttname"><a href="classList.html#a70aecf37bd9d779a394e4d50377fbf5f">List::~List</a></div><div class="ttdeci">~List()</div><div class="ttdoc">Destruktor klasy List.</div><div class="ttdef"><b>Definicja</b> List.cpp:12</div></div>
+<div class="ttc" id="aclassList_html_a8a61b6c358d9b6f8847b29d3154890d1"><div class="ttname"><a href="classList.html#a8a61b6c358d9b6f8847b29d3154890d1">List::display_next</a></div><div class="ttdeci">void display_next(int index) const</div><div class="ttdoc">Wyświetla następny element, zaczynając od danego indeksu.</div><div class="ttdef"><b>Definicja</b> List.cpp:186</div></div>
+<div class="ttc" id="aclassList_html_a912c199604dc1385e192530e81309c35"><div class="ttname"><a href="classList.html#a912c199604dc1385e192530e81309c35">List::purge</a></div><div class="ttdeci">void purge()</div><div class="ttdoc">Usuwa wszystkie elementy z listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:159</div></div>
+<div class="ttc" id="aclassList_html_ad83b758e6dfa0a39e627b2efedb7f284"><div class="ttname"><a href="classList.html#ad83b758e6dfa0a39e627b2efedb7f284">List::remove_first</a></div><div class="ttdeci">void remove_first()</div><div class="ttdoc">Usuwa pierwszy element z listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:77</div></div>
+<div class="ttc" id="aclassList_html_ae2fa243376e9f6cfe68538b18ca07fb5"><div class="ttname"><a href="classList.html#ae2fa243376e9f6cfe68538b18ca07fb5">List::insert_at</a></div><div class="ttdeci">void insert_at(int value, int index)</div><div class="ttdoc">Wstawia nowy element na określonym indeksie.</div><div class="ttdef"><b>Definicja</b> List.cpp:43</div></div>
+<div class="ttc" id="aclassList_html_afb14d1b5bfad6e2e47b12272a99f9179"><div class="ttname"><a href="classList.html#afb14d1b5bfad6e2e47b12272a99f9179">List::operator[]</a></div><div class="ttdeci">const int &amp; operator[](int index) const</div><div class="ttdoc">Przeciążenie operatora [] do dostępu do elementów listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:223</div></div>
+<div class="ttc" id="aclassList_html_afd44dfbf7059504174ef59567acbd1c8"><div class="ttname"><a href="classList.html#afd44dfbf7059504174ef59567acbd1c8">List::push_front</a></div><div class="ttdeci">void push_front(int i)</div><div class="ttdoc">Dodaje nowy element na początku listy.</div><div class="ttdef"><b>Definicja</b> List.cpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="List_8hpp.html">List.hpp</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
 </body>
 </html>
