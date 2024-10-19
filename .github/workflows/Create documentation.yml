@@ -60,3 +60,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "main.pdf"
+          allowUpdates: true
