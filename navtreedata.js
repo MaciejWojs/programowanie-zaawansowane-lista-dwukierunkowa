@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "Lista dwukierunkowa C++", "index.html", [
-    [ "README", "md_README.html", null ],
     [ "Klasy", "annotated.html", [
       [ "Lista klas", "annotated.html", "annotated_dup" ],
       [ "Indeks klas", "classes.html", null ],

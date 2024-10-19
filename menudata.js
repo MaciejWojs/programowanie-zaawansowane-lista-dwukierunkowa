@@ -24,7 +24,6 @@
 */
 var menudata={children:[
 {text:"Strona główna",url:"index.html"},
-{text:"Powiązane strony",url:"pages.html"},
 {text:"Klasy",url:"annotated.html",children:[
 {text:"Lista klas",url:"annotated.html"},
 {text:"Indeks klas",url:"classes.html"},
