@@ -24,7 +24,7 @@ jobs:
           wget -q -O doxygen-awesome-css.tar.gz "$download_url"
 
           tar -xzf doxygen-awesome-css.tar.gz
-          rm -rf doxygen-awesome-css.tar.gz
+          rm -rf doxygen-awesome-css.tar.gz README.md
           mv doxygen-awesome-css*/ doxygen-awesome-css/
           cp doxygen-awesome-css/doxygen-awesome.css . 
           cp doxygen-awesome-css/doxygen-awesome-sidebar-only.css .

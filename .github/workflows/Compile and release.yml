@@ -5,7 +5,7 @@ on:
       - '*.*.*'
 
 jobs:
-  Create_documentation:
+  release_compiled_program:
     runs-on: ubuntu-latest
     permissions:
       contents: write
