@@ -8,4 +8,6 @@ int main() {
     }
     std::cout << e;
     e.display_reversed();
+
+    //Dopisanie z drugiej lokalizacji
 }
